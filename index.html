@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script src="script.js"></script>
+    <div id="preloader">
+          <div class="loader"></div>
+    </div>
+<body id="home">
+    <section id="s0">
+    <div class="header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="img"><img src="nox.svg" height="50px";></img></div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#pdd">Pendidikan</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+            <div class="container">
+                 <div class="pp">
+                    <img src="agus.jpg" alt="profile pic">
+                 </div>
+                 <div id="tabel" class="teks">
+                    <h2>Web Portfolio</h2>
+                    <h1>Agustin Yoga Prasetyo</h1>
+                    <br>
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s1">
+    <div class="cont">
+        <div class="border" id="profil">
+            <h1>Halo Pak Wir</h1>
+            <p>Perkenalkan saya Agustin Yoga Prasetyo. Saya sekarang bersekolah di SMK Negeri 1 Wonosobo. Saya merupakan salah satu siswa dari kelas XI TKJ 2. Saya masuk jurusan TKJ karena saya tertarik di bidang IT.</p>
+        </div>
+
+        <br>
+
+        <div class="border">
+        <h1>Profil Diri</h1>
+        <p>Nama Lengkap : Agustin Yoga Prasetyo</p>
+        <p>Tempat / Tanggal Lahir : Wonosobo, 1 Agustus 2007</p>
+        <p>Jenis Kelamin : Laki-laki</p>
+        <p>Agama : Islam</p>
+        <p>Usia : 17 tahun</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="s2">
+        <h1 id="pdd">Riwayat Pendidikan</h1>
+        <div class="bar" id="sch">
+            <div class="sch">
+                <a href="https://dapo.dikdasmen.go.id/sekolah/88E0A6E36D6FC88E33FB">
+                <img src="sd.png" height="250">
+                <p>SD Negeri Semayu</p></a>
+            </div>
+            <div class="sch">
+                <a href="https://dapo.dikdasmen.go.id/sekolah/FB3D131A6AD16976E4FB">
+                <img src="smp.png" height="250">
+                <p>SMP Negeri 2 Kalikajar</p></a>
+            </div>
+            <div class="sch">
+                <a href="https://dapo.dikdasmen.go.id/sekolah/2281BDC70D1146A78431">
+                <img src="smk.png" height="250">
+                <p>SMK Negeri 1 Wonosobo</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="s3">
+        
+        <center>
+            <a>Skill</a>
+            <div class="gambar">
+                <img src="konn.webp">
+            </div>
+            <div class="teks">
+                <h1>Pemrograman Web</h1>
+                <br>
+                <p>Saya mahir dalm berenang dan pernah menjuarai event O2SN ditingkat kabupaten.</p>
+            </div>
+        
+        
+            <div class="gambar">
+                <img src="editor.png">
+            </div>
+            <div class="teks">
+                <h1>Editing</h1>
+                <br>
+                <p>Saya sedikit berpengalaman dalam bidang edit mengedit.</p>
+            </div>
+        <script src="scroll.js"></script>
+        </div>
+        <button class="btn" onclick="window.location.href='#s0';">
+            <span class="butex">BACK!<span>
+            <span class="icon fa fa-arrow-up"><span>
+        </button>
+
+        </center>
+        <br>
+        <br>
+    </section>
+
+</div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar*/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+
+</body>
